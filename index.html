@@ -1,0 +1,1103 @@
+<!DOCTYPE html>
+<html lang="vi" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>HOÀI BẢO PT | Personal Trainer 1:1 Chuyên Nghiệp Tại La Gi, Lâm Đồng</title>
+  <meta name="description" content="Huấn luyện viên cá nhân 1:1 Hoài Bảo tại La Gi, Lâm Đồng. 7 năm kinh nghiệm tập luyện, 2 năm HLV thực chiến. Thiết kế lộ trình tăng cơ, giảm mỡ cá nhân hóa." />
+
+  <!-- Google Fonts: Montserrat & Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Montserrat:wght@700;800;900&display=swap" rel="stylesheet" />
+
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            obsidian: '#0D0D0D',
+            charcoal: '#121212',
+            surface: '#171A18',
+            forest: '#0B3C26',
+            emeraldDark: '#0F5132',
+            neon: '#00E676',
+            emeraldAccent: '#10B981',
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif'],
+            heading: ['Montserrat', 'sans-serif'],
+          },
+          boxShadow: {
+            'neon': '0 0 25px rgba(0, 230, 118, 0.22)',
+            'neon-strong': '0 0 35px rgba(0, 230, 118, 0.38)',
+            'card': '0 14px 35px -10px rgba(0, 0, 0, 0.75)',
+          }
+        }
+      }
+    };
+  </script>
+
+  <style>
+    :root {
+      --bg-primary: #0D0D0D;
+      --bg-secondary: #121212;
+      --green-dark: #0B3C26;
+      --green-mid: #0F5132;
+      --green-neon: #00E676;
+      --green-accent: #10B981;
+    }
+
+    body {
+      background-color: var(--bg-primary);
+      color: #F3F4F6;
+      font-family: 'Inter', sans-serif;
+      overflow-x: hidden;
+    }
+
+    h1, h2, h3, h4, .font-heading {
+      font-family: 'Montserrat', sans-serif;
+    }
+
+    /* Custom Scrollbar */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+    ::-webkit-scrollbar-track {
+      background: #0D0D0D;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: #0F5132;
+      border-radius: 4px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: #00E676;
+    }
+
+    /* Subtle Grid Background */
+    .bg-grid-pattern {
+      background-image:
+        linear-gradient(to right, rgba(0, 230, 118, 0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(0, 230, 118, 0.04) 1px, transparent 1px);
+      background-size: 44px 44px;
+    }
+
+    /* Fade-in Reveal Animation */
+    .reveal {
+      opacity: 0;
+      transform: translateY(26px);
+      transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .reveal.active {
+      opacity: 1;
+      transform: translateY(0);
+    }
+
+    /* Glowing Border Card */
+    .card-premium {
+      background: linear-gradient(145deg, #161917 0%, #101211 100%);
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    }
+    .card-premium:hover {
+      transform: translateY(-4px);
+      border-color: rgba(0, 230, 118, 0.4);
+      box-shadow: 0 18px 40px -12px rgba(0, 0, 0, 0.85), 0 0 20px rgba(0, 230, 118, 0.12);
+    }
+
+    /* Pulse Ring for Floating Zalo */
+    @keyframes pulseRing {
+      0% { transform: scale(0.95); opacity: 0.75; }
+      70% { transform: scale(1.35); opacity: 0; }
+      100% { transform: scale(1.35); opacity: 0; }
+    }
+    .pulse-ring::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 9999px;
+      background-color: #00E676;
+      z-index: -1;
+      animation: pulseRing 2s infinite;
+    }
+  </style>
+</head>
+<body class="antialiased selection:bg-neon selection:text-obsidian">
+
+  <!-- ==================== 1. HEADER / NAVIGATION BAR ==================== -->
+  <header id="navbar" class="fixed top-0 inset-x-0 z-50 transition-all duration-300 bg-obsidian/85 backdrop-blur-md border-b border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        <!-- Logo -->
+        <a href="#" class="flex items-center gap-3 group">
+          <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-neon to-emeraldDark flex items-center justify-center text-obsidian font-heading font-black text-xl shadow-neon group-hover:scale-105 transition-transform">
+            HB
+          </div>
+          <div>
+            <span class="font-heading font-black text-lg sm:text-xl tracking-wider text-white block leading-none">
+              HOÀI BẢO <span class="text-neon">PT</span>
+            </span>
+            <span class="text-[11px] uppercase tracking-[0.2em] text-gray-400 font-medium">La Gi • Personal Coach</span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-300">
+          <a href="#ve-toi" class="hover:text-neon transition-colors">Về tôi</a>
+          <a href="#lo-trinh" class="hover:text-neon transition-colors">Lộ trình</a>
+          <a href="#bang-gia" class="hover:text-neon transition-colors">Bảng giá</a>
+          <a href="#lich-trong" class="hover:text-neon transition-colors">Lịch trống</a>
+          <a href="#ket-qua" class="hover:text-neon transition-colors">Đánh giá</a>
+          <a href="#lien-he" class="hover:text-neon transition-colors">Liên hệ</a>
+        </nav>
+
+        <!-- Right CTA & Mobile Button -->
+        <div class="flex items-center gap-3">
+          <a href="#lien-he" class="hidden sm:inline-flex items-center gap-2 px-5 py-2.5 rounded-lg bg-neon text-obsidian font-heading font-bold text-xs uppercase tracking-wider hover:bg-emeraldAccent hover:text-white transition-all shadow-neon">
+            <span>Đăng ký tư vấn 1:1</span>
+            <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M13.5 4.5 21 12m0 0-7.5 7.5M21 12H3"/></svg>
+          </a>
+
+          <!-- Mobile Hamburger -->
+          <button id="mobile-menu-btn" aria-label="Mở menu" class="lg:hidden p-2.5 rounded-lg bg-charcoal border border-white/10 text-gray-200 hover:text-neon hover:border-neon/40 transition-colors">
+            <svg id="icon-open" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+            <svg id="icon-close" class="w-6 h-6 hidden" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Mobile Menu Drawer -->
+    <div id="mobile-menu" class="hidden lg:hidden bg-charcoal border-b border-white/10 px-4 pt-3 pb-6 space-y-2">
+      <a href="#ve-toi" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Về tôi</a>
+      <a href="#lo-trinh" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Lộ trình</a>
+      <a href="#bang-gia" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Bảng giá</a>
+      <a href="#lich-trong" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Lịch trống</a>
+      <a href="#ket-qua" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Đánh giá</a>
+      <a href="#lien-he" class="mobile-link block px-4 py-2.5 rounded-lg text-gray-200 hover:bg-forest/50 hover:text-neon font-medium">Liên hệ</a>
+      <div class="pt-3 border-t border-white/10 flex flex-col gap-2.5">
+        <a href="#lien-he" class="mobile-link w-full text-center py-3 rounded-lg bg-neon text-obsidian font-heading font-bold text-sm uppercase tracking-wider">
+          Đăng ký tư vấn 1:1
+        </a>
+        <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="w-full text-center py-3 rounded-lg bg-forest text-neon border border-neon/30 font-semibold text-sm">
+          Chat Zalo: Hoài Bảo (0327694803)
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- ==================== 2. HERO SECTION ==================== -->
+  <section class="relative pt-32 pb-20 lg:pt-40 lg:pb-28 bg-grid-pattern overflow-hidden">
+    <!-- Ambient Radial Glows -->
+    <div class="absolute -top-24 -left-24 w-96 h-96 bg-forest/40 rounded-full blur-[130px] pointer-events-none"></div>
+    <div class="absolute top-1/3 -right-24 w-96 h-96 bg-neon/10 rounded-full blur-[140px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Content -->
+        <div class="lg:col-span-7 space-y-6 reveal">
+          <div class="inline-flex items-center gap-2.5 px-3.5 py-1.5 rounded-full bg-forest/60 border border-neon/30 text-neon text-xs font-semibold uppercase tracking-wider">
+            <span class="w-2 h-2 rounded-full bg-neon animate-ping"></span>
+            <span>Huấn Luyện Viên Cá Nhân 1:1 • La Gi, Lâm Đồng</span>
+          </div>
+
+          <h1 class="text-4xl sm:text-5xl lg:text-6xl font-heading font-black text-white leading-[1.12] tracking-tight">
+            KỶ LUẬT TẠO NÊN <br />
+            <span class="text-transparent bg-clip-text bg-gradient-to-r from-neon via-emeraldAccent to-teal-300">
+              VÓC DÁNG ĐỘC BẢN
+            </span>
+          </h1>
+
+          <p class="text-base sm:text-lg text-gray-300 leading-relaxed max-w-2xl">
+            Đồng hành cùng <strong class="text-white">HLV Hoài Bảo</strong> — <span class="text-neon font-semibold">7 năm kinh nghiệm tập luyện thực chiến</span> & <span class="text-neon font-semibold">2 năm huấn luyện cá nhân 1:1</span> trực tiếp tại <strong class="text-white">La Gi, Lâm Đồng</strong>. Không giáo án rập khuôn: mỗi buổi tập và thực đơn được thiết kế riêng theo đúng thể trạng, quỹ thời gian và mục tiêu của bạn.
+          </p>
+
+          <!-- CTA Group -->
+          <div class="flex flex-col sm:flex-row gap-4 pt-2">
+            <a href="#lien-he" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-neon text-obsidian font-heading font-extrabold text-sm uppercase tracking-wider hover:bg-emeraldAccent hover:text-white transition-all shadow-neon hover:shadow-neon-strong">
+              <span>Nhận lộ trình cá nhân hóa</span>
+              <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M17.25 8.25 21 12m0 0-3.75 3.75M21 12H3"/></svg>
+            </a>
+
+            <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="inline-flex items-center justify-center gap-2.5 px-7 py-4 rounded-xl bg-charcoal border border-neon/40 text-white font-heading font-bold text-sm uppercase tracking-wider hover:bg-forest/70 hover:border-neon transition-all">
+              <span class="px-1.5 py-0.5 text-[10px] font-black bg-neon text-obsidian rounded">ZALO</span>
+              <span>Liên hệ Zalo ngay</span>
+            </a>
+          </div>
+
+          <!-- Trust Metrics -->
+          <div class="grid grid-cols-3 gap-4 pt-6 border-t border-white/10 max-w-xl">
+            <div>
+              <p class="text-2xl sm:text-3xl font-heading font-black text-neon">7+ NĂM</p>
+              <p class="text-xs sm:text-sm text-gray-400 mt-0.5">Kinh nghiệm tập luyện</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-heading font-black text-white">2+ NĂM</p>
+              <p class="text-xs sm:text-sm text-gray-400 mt-0.5">HLV 1:1 thực chiến</p>
+            </div>
+            <div>
+              <p class="text-2xl sm:text-3xl font-heading font-black text-neon">100%</p>
+              <p class="text-xs sm:text-sm text-gray-400 mt-0.5">Giáo án cá nhân hóa</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Visual Card -->
+        <div class="lg:col-span-5 reveal">
+          <div class="relative rounded-2xl overflow-hidden border border-neon/25 bg-charcoal shadow-card">
+            <img
+              src="D:\3 Code\IMG1.jpg"
+              alt="Huấn luyện viên cá nhân Hoài Bảo tại phòng tập La Gi"
+              class="w-full h-[460px] object-cover object-center opacity-85"
+            />
+            <div class="absolute inset-0 bg-gradient-to-t from-obsidian via-obsidian/45 to-transparent"></div>
+
+            <!-- Floating Coach Badge -->
+            <div class="absolute top-4 right-4 px-3.5 py-2 rounded-xl bg-obsidian/90 backdrop-blur-md border border-neon/30 text-right">
+              <p class="text-[11px] uppercase tracking-wider text-gray-400">Trực tiếp 1:1 tại</p>
+              <p class="text-sm font-heading font-bold text-neon">La Gi, Lâm Đồng</p>
+            </div>
+
+            <!-- Bottom Info Overlay -->
+            <div class="absolute bottom-0 inset-x-0 p-6">
+              <div class="p-4 rounded-xl bg-obsidian/90 backdrop-blur-md border border-white/10 flex items-center justify-between gap-4">
+                <div>
+                  <p class="text-xs text-neon font-semibold uppercase tracking-wider">Personal Trainer & Fitness Coach</p>
+                  <h2 class="text-xl font-heading font-extrabold text-white mt-0.5">HLV HOÀI BẢO</h2>
+                  <p class="text-xs text-gray-400 mt-1">Hotline / Zalo: <a href="tel:0327694803" class="text-white font-semibold hover:text-neon">0327 694 803</a></p>
+                </div>
+                <a href="tel:0327694803" aria-label="Gọi ngay 0327694803" class="w-12 h-12 rounded-xl bg-neon text-obsidian flex items-center justify-center hover:scale-105 transition-transform shadow-neon shrink-0">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 3. ABOUT ME & CORE VALUES ==================== -->
+  <section id="ve-toi" class="py-20 lg:py-28 bg-charcoal border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-12 gap-12 items-start">
+        <!-- Story Column -->
+        <div class="lg:col-span-5 space-y-6 reveal">
+          <span class="text-xs font-heading font-bold uppercase tracking-[0.22em] text-neon">Câu chuyện & Triết lý</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white leading-tight">
+            7 NĂM TỰ RÈN LUYỆN <br />
+            <span class="text-neon">ĐỂ HIỂU RÕ TỪNG CƠ BẮP CỦA BẠN</span>
+          </h2>
+          <div class="space-y-4 text-gray-300 text-sm sm:text-base leading-relaxed">
+            <p>
+              Bắt đầu bước vào phòng gym từ con số 0, <strong class="text-white">Hoài Bảo</strong> từng trải qua đủ mọi sai lầm của người mới: tập theo cảm tính, chấn thương khớp vì sai kỹ thuật, và chững cân hàng tháng trời do ăn kiêng cực đoan.
+            </p>
+            <p>
+              Suốt <strong class="text-white">7 năm kiên trì nghiên cứu và thực hành</strong>, Bảo nhận ra thể hình bền vững không đến từ việc hành xác, mà đến từ <span class="text-neon font-medium">kỹ thuật chuẩn xác + dinh dưỡng phù hợp nhịp sống</span>.
+            </p>
+            <p>
+              Trong <strong class="text-white">2 năm làm HLV cá nhân 1:1 tại La Gi</strong>, niềm vui lớn nhất của Bảo là thấy học viên không chỉ giảm mỡ, tăng cơ rõ rệt sau 12 tuần mà còn tự tin, khỏe khoắn và làm chủ kiến thức tập luyện trọn đời.
+            </p>
+          </div>
+
+          <div class="p-5 rounded-xl bg-forest/40 border-l-4 border-neon">
+            <p class="text-sm italic text-gray-200">
+              “Tôi không bán những buổi tập mệt nhoài vô nghĩa. Tôi đồng hành để mỗi giọt mồ hôi của bạn đều chuyển hóa thành chỉ số cơ thể thực tế.”
+            </p>
+            <p class="text-xs font-heading font-bold text-neon mt-2 uppercase tracking-wider">— HLV Hoài Bảo</p>
+          </div>
+        </div>
+
+        <!-- 4 Core Value Cards -->
+        <div id="lo-trinh" class="lg:col-span-7 grid sm:grid-cols-2 gap-6">
+          <!-- Card 1 -->
+          <div class="card-premium p-6 rounded-2xl reveal">
+            <div class="w-12 h-12 rounded-xl bg-forest border border-neon/30 flex items-center justify-center text-neon mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 12h3.75M9 15h3.75M9 18h3.75m3 .75H18a2.25 2.25 0 0 0 2.25-2.25V6.108c0-1.135-.845-2.098-1.976-2.192a48.424 48.424 0 0 0-1.123-.08m-5.801 0c-.065.21-.1.433-.1.664 0 .414.336.75.75.75h4.5a.75.75 0 0 0 .75-.75 2.25 2.25 0 0 0-.1-.664m-5.8 0A2.251 2.251 0 0 1 13.5 2.25H15c1.012 0 1.867.668 2.15 1.586m-5.8 0c-.376.023-.75.05-1.124.08C9.095 4.01 8.25 4.973 8.25 6.108V8.25m0 0H4.875c-.621 0-1.125.504-1.125 1.125v11.25c0 .621.504 1.125 1.125 1.125h9.75c.621 0 1.125-.504 1.125-1.125V9.375c0-.621-.504-1.125-1.125-1.125H8.25Z"/></svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white mb-2">1. Đánh giá thể trạng chuyên sâu</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Đo chỉ số InBody, kiểm tra sai lệch tư thế (gù lưng, võng lưng, lệch vai) và biên độ vận động khớp trước khi viết giáo án buổi đầu tiên.
+            </p>
+          </div>
+
+          <!-- Card 2 -->
+          <div class="card-premium p-6 rounded-2xl reveal">
+            <div class="w-12 h-12 rounded-xl bg-forest border border-neon/30 flex items-center justify-center text-neon mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M3.75 13.5l10.5-11.25L12 10.5h8.25L9.75 21.75 12 13.5H3.75z"/></svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white mb-2">2. Kỹ thuật chuẩn sinh học vận động</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Tối ưu đường đi tạ theo cấu trúc xương của từng người. Cảm nhận đúng nhóm cơ mục tiêu, loại bỏ hoàn toàn áp lực xấu lên cột sống và khớp gối.
+            </p>
+          </div>
+
+          <!-- Card 3 -->
+          <div class="card-premium p-6 rounded-2xl reveal">
+            <div class="w-12 h-12 rounded-xl bg-forest border border-neon/30 flex items-center justify-center text-neon mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M12 3v2.25m6.364.386-1.591 1.591M21 12h-2.25m-.386 6.364-1.591-1.591M12 18.75V21m-4.773-4.227-1.591 1.591M5.25 12H3m4.227-4.773L5.636 5.636M15.75 12a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0Z"/></svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white mb-2">3. Dinh dưỡng thực tế, dễ áp dụng</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Không bắt buộc ăn ức gà luộc nhàm chán. Tính toán Macro dựa trên món ăn Việt quen thuộc, phù hợp cả người đi làm bận rộn hoặc ăn cơm gia đình.
+            </p>
+          </div>
+
+          <!-- Card 4 -->
+          <div class="card-premium p-6 rounded-2xl reveal">
+            <div class="w-12 h-12 rounded-xl bg-forest border border-neon/30 flex items-center justify-center text-neon mb-5">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M15 19.128a9.38 9.38 0 0 0 2.625.372 9.337 9.337 0 0 0 4.121-.952 4.125 4.125 0 0 0-7.533-2.493M15 19.128v-.003c0-1.113-.285-2.16-.786-3.07M15 19.128v.106A12.318 12.318 0 0 1 8.624 21c-2.331 0-4.512-.645-6.374-1.766l-.001-.109a6.375 6.375 0 0 1 11.964-3.07M12 6.375a3.375 3.375 0 1 1-6.75 0 3.375 3.375 0 0 1 6.75 0Zm8.25 2.25a2.625 2.625 0 1 1-5.25 0 2.625 2.625 0 0 1 5.25 0Z"/></svg>
+            </div>
+            <h3 class="text-lg font-heading font-bold text-white mb-2">4. Kèm cặp 1:1 & Theo sát 24/7</h3>
+            <p class="text-sm text-gray-400 leading-relaxed">
+              Trực tiếp chỉnh từng nhịp thở, hỗ trợ đỡ tạ an toàn và nhắc nhở check-in bữa ăn mỗi ngày qua Zalo để bạn không bao giờ bỏ cuộc giữa chừng.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 4. SPECIALIZED 3-MONTH PLAN (PRICING) ==================== -->
+  <section id="bang-gia" class="py-20 lg:py-28 bg-obsidian relative">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <!-- Section Heading -->
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-xs font-heading font-bold uppercase tracking-[0.22em] text-neon">Đầu tư cho sức khỏe & vóc dáng</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-white mt-3">
+          LỘ TRÌNH HUẤN LUYỆN <span class="text-neon">CHUYÊN BIỆT 1:1</span>
+        </h2>
+        <p class="text-gray-400 mt-4 text-sm sm:text-base">
+          Tập trung tối đa hiệu quả với <strong class="text-white">Gói Huấn Luyện 3 Tháng</strong> — khoảng thời gian vàng đủ để cơ thể tái cấu trúc mô cơ, đốt mỡ bền vững và hình thành thói quen kỷ luật.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-12 gap-8 items-stretch">
+        <!-- Side Plan: Gói Khởi Động 1 Tháng -->
+        <div class="lg:col-span-4 card-premium rounded-2xl p-7 flex flex-col justify-between reveal">
+          <div>
+            <div class="flex items-center justify-between">
+              <span class="px-3 py-1 rounded-full bg-white/5 text-gray-300 text-xs font-semibold">Gói Trải Nghiệm</span>
+              <span class="text-xs text-gray-400">12 Buổi / Tháng</span>
+            </div>
+            <h3 class="text-2xl font-heading font-extrabold text-white mt-4">Gói Khởi Động 1 Tháng</h3>
+            <p class="text-sm text-gray-400 mt-2">Phù hợp cho người mới muốn làm quen kỹ thuật chuẩn và thiết lập nền tảng thể lực ban đầu.</p>
+
+            <div class="my-6 pb-6 border-b border-white/10">
+              <div class="flex items-baseline gap-2">
+                <span class="text-3xl font-heading font-black text-white">3.600.000đ</span>
+                <span class="text-xs text-gray-400">/ 12 buổi</span>
+              </div>
+              <p class="text-xs text-emeraldAccent mt-1">Tương đương 300.000đ / buổi kèm 1:1</p>
+            </div>
+
+            <ul class="space-y-3.5 text-sm text-gray-300">
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emeraldAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                <span><strong>3 buổi/tuần</strong> tập trực tiếp 1:1 cùng HLV Hoài Bảo</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emeraldAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                <span>Đo & phân tích chỉ số <strong>InBody</strong> đầu kỳ</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emeraldAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                <span>Giáo án tập luyện cá nhân hóa theo thể trạng</span>
+              </li>
+              <li class="flex items-start gap-3">
+                <svg class="w-5 h-5 text-emeraldAccent shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="m4.5 12.75 6 6 9-13.5"/></svg>
+                <span>Hướng dẫn khung dinh dưỡng cơ bản</span>
+              </li>
+            </ul>
+          </div>
+
+          <button onclick="selectPackage('Gói Khởi Động 1 Tháng (12 buổi)')" class="mt-8 w-full py-3.5 px-5 rounded-xl bg-white/5 hover:bg-forest border border-white/15 hover:border-neon/50 text-white font-heading font-bold text-xs uppercase tracking-wider transition-all">
+            Chọn gói 1 tháng
+          </button>
+        </div>
+
+        <!-- FEATURED PLAN: GÓI HUẤN LUYỆN 3 THÁNG -->
+        <div class="lg:col-span-8 relative rounded-3xl p-8 sm:p-10 bg-gradient-to-br from-forest/85 via-charcoal to-obsidian border-2 border-neon shadow-neon reveal">
+          <!-- Best Value Badge -->
+          <div class="absolute -top-4 left-8 px-4 py-1.5 rounded-full bg-neon text-obsidian font-heading font-black text-xs uppercase tracking-wider shadow-neon">
+            ★ Lựa chọn hiệu quả nhất • Cam kết thay đổi rõ rệt
+          </div>
+
+          <div class="grid md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-7 space-y-5">
+              <div>
+                <span class="text-xs font-semibold uppercase tracking-widest text-neon">Chương trình trọng điểm 12 tuần</span>
+                <h3 class="text-2xl sm:text-3xl font-heading font-black text-white mt-1">
+                  GÓI HUẤN LUYỆN 3 THÁNG <br />
+                  <span class="text-neon">THAY ĐỔI VÓC DÁNG TOÀN DIỆN</span>
+                </h3>
+              </div>
+
+              <p class="text-sm text-gray-200 leading-relaxed">
+                Lộ trình chuyên sâu 36 buổi (3 buổi/tuần) được chia thành 3 giai đoạn: <strong class="text-white">Chuẩn hóa kỹ thuật & Kích hoạt cơ</strong> (Tháng 1) → <strong class="text-white">Tăng tiến sức mạnh & Đốt mỡ tối đa</strong> (Tháng 2) → <strong class="text-white">Điêu khắc đường nét & Duy trì bền vững</strong> (Tháng 3).
+              </p>
+
+              <ul class="space-y-3 text-sm text-gray-100">
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-neon/20 text-neon flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                  <span><strong>36 Buổi tập 1:1 trực tiếp</strong> (3 buổi/tuần, 60 phút/buổi) tại La Gi</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-neon/20 text-neon flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                  <span><strong>Lịch tập cá nhân hóa 100%</strong> + Bài tập phụ trợ tự tập thêm ngoài giờ</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-neon/20 text-neon flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                  <span><strong>Đánh giá InBody định kỳ mỗi 2 tuần</strong> để tinh chỉnh giáo án kịp thời</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-neon/20 text-neon flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                  <span><strong>Thiết kế thực đơn dinh dưỡng linh hoạt</strong> theo khẩu vị & lịch sinh hoạt</span>
+                </li>
+                <li class="flex items-start gap-3">
+                  <span class="w-5 h-5 rounded-full bg-neon/20 text-neon flex items-center justify-center shrink-0 mt-0.5 font-bold text-xs">✓</span>
+                  <span><strong>Hỗ trợ & theo dõi bữa ăn 24/7</strong> qua Zalo riêng với HLV Hoài Bảo</span>
+                </li>
+              </ul>
+            </div>
+
+            <!-- Pricing Box Inside Featured Card -->
+            <div class="md:col-span-5 bg-obsidian/90 backdrop-blur-md border border-neon/30 rounded-2xl p-6 text-center space-y-5">
+              <div class="inline-block px-3 py-1 rounded-md bg-red-500/15 border border-red-500/30 text-red-400 text-xs font-bold">
+                ƯU ĐÃI TIẾT KIỆM 1.800.000đ
+              </div>
+
+              <div>
+                <p class="text-sm text-gray-400 line-through">Giá gốc: 10.800.000đ</p>
+                <p class="text-3xl sm:text-4xl font-heading font-black text-neon mt-1">10.000.000đ</p>
+                <p class="text-xs text-gray-300 mt-1.5">Trọn gói 3 tháng (Chỉ <strong>250.000đ / buổi</strong>)</p>
+              </div>
+
+              <div class="p-3 rounded-xl bg-forest/40 border border-neon/20 text-xs text-gray-200 space-y-1">
+                <p class="font-semibold text-neon">🎁 Quà tặng khi đăng ký trong tháng:</p>
+                <p>Tặng 01 buổi đánh giá thể trạng + Tập thử 1:1 miễn phí trước khi quyết định</p>
+              </div>
+
+              <button onclick="selectPackage('Gói Huấn Luyện 3 Tháng - Thay Đổi Vóc Dáng (Ưu đãi 10.000.000đ)')" class="w-full py-4 px-5 rounded-xl bg-neon text-obsidian font-heading font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-emeraldAccent hover:text-white transition-all shadow-neon">
+                Đăng ký gói 3 tháng ngay
+              </button>
+
+              <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="block text-xs text-gray-400 hover:text-neon underline underline-offset-4">
+                Hoặc hỏi trực tiếp HLV qua Zalo
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 5. SCHEDULE & SLOT TRACKER ==================== -->
+  <section id="lich-trong" class="hidden py-20 lg:py-28 bg-charcoal border-y border-white/5">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col lg:flex-row lg:items-end justify-between gap-6 mb-10 reveal">
+        <div>
+          <span class="text-xs font-heading font-bold uppercase tracking-[0.22em] text-neon">Cập nhật khung giờ huấn luyện</span>
+          <h2 class="text-3xl sm:text-4xl font-heading font-black text-white mt-2">
+            LỊCH TẬP & <span class="text-neon">SLOT CÒN TRỐNG TRONG TUẦN</span>
+          </h2>
+          <p class="text-sm text-gray-400 mt-2 max-w-2xl">
+            Để đảm bảo chất lượng kèm 1:1 tốt nhất, Hoài Bảo chỉ nhận giới hạn học viên mỗi khung giờ. Chọn khung giờ <span class="text-neon font-semibold">[Còn trống]</span> bên dưới để giữ lịch ngay.
+          </p>
+        </div>
+
+        <!-- Shift Filter Tabs -->
+        <div class="inline-flex p-1.5 rounded-xl bg-obsidian border border-white/10 self-start lg:self-auto" role="tablist">
+          <button type="button" data-filter="all" class="slot-tab active px-4 py-2 rounded-lg text-xs font-heading font-bold uppercase tracking-wider bg-neon text-obsidian transition-all">
+            Tất cả
+          </button>
+          <button type="button" data-filter="morning" class="slot-tab px-4 py-2 rounded-lg text-xs font-heading font-bold uppercase tracking-wider text-gray-400 hover:text-white transition-all">
+            Buổi Sáng
+          </button>
+          <button type="button" data-filter="afternoon" class="slot-tab px-4 py-2 rounded-lg text-xs font-heading font-bold uppercase tracking-wider text-gray-400 hover:text-white transition-all">
+            Buổi Chiều
+          </button>
+          <button type="button" data-filter="evening" class="slot-tab px-4 py-2 rounded-lg text-xs font-heading font-bold uppercase tracking-wider text-gray-400 hover:text-white transition-all">
+            Buổi Tối
+          </button>
+        </div>
+      </div>
+
+      <!-- Legend -->
+      <div class="flex flex-wrap items-center gap-6 mb-6 text-xs font-medium reveal">
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-neon shadow-neon"></span>
+          <span class="text-gray-200">Còn trống — Nhấn để đăng ký giữ slot</span>
+        </div>
+        <div class="flex items-center gap-2">
+          <span class="w-3 h-3 rounded-full bg-red-500/70"></span>
+          <span class="text-gray-400">Đã kín slot học viên 1:1</span>
+        </div>
+      </div>
+
+      <!-- Responsive Schedule Table / Grid -->
+      <div class="overflow-x-auto rounded-2xl border border-white/10 bg-obsidian shadow-card reveal">
+        <table class="w-full min-w-[820px] text-left border-collapse">
+          <thead>
+            <tr class="bg-forest/50 border-b border-white/10 text-xs font-heading uppercase tracking-wider text-gray-200">
+              <th class="py-4 px-4 w-36">Khung giờ</th>
+              <th class="py-4 px-3 text-center">Thứ 2</th>
+              <th class="py-4 px-3 text-center">Thứ 3</th>
+              <th class="py-4 px-3 text-center">Thứ 4</th>
+              <th class="py-4 px-3 text-center">Thứ 5</th>
+              <th class="py-4 px-3 text-center">Thứ 6</th>
+              <th class="py-4 px-3 text-center">Thứ 7</th>
+              <th class="py-4 px-3 text-center">Chủ Nhật</th>
+            </tr>
+          </thead>
+          <tbody id="schedule-body" class="divide-y divide-white/5 text-xs">
+            <!-- Rendered cleanly by Vanilla JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 6. TRANSFORMATIONS & STORIES ==================== -->
+  <section id="ket-qua" class="py-20 lg:py-28 bg-obsidian">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="text-center max-w-3xl mx-auto mb-16 reveal">
+        <span class="text-xs font-heading font-bold uppercase tracking-[0.22em] text-neon">Kết quả chứng minh năng lực</span>
+        <h2 class="text-3xl sm:text-4xl font-heading font-black text-white mt-3">
+          HÀNH TRÌNH LỘT XÁC CỦA <span class="text-neon">HỌC VIÊN TẠI LA GI</span>
+        </h2>
+        <p class="text-gray-400 mt-3 text-sm sm:text-base">
+          Mỗi con số dưới đây là kết quả của sự kỷ luật, giáo án chuẩn xác và sự đồng hành sát sao từng buổi tập.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        <!-- Story 1 -->
+        <article class="card-premium rounded-2xl overflow-hidden flex flex-col justify-between reveal">
+          <div>
+            <!-- Before / After Visual Split -->
+            <div class="relative h-56 grid grid-cols-2 bg-charcoal border-b border-white/10">
+              <div class="relative overflow-hidden border-r border-white/15">
+                <img src="https://th.bing.com/th/id/R.f326594b526aea5c1d141736e5e32b79?rik=ttwo9D1Icht0ig&pid=ImgRaw&r=0" alt="Trước tập luyện" class="w-full h-full object-cover grayscale opacity-65" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-obsidian/85 text-[10px] font-bold uppercase text-gray-300">Before • 82kg</span>
+              </div>
+              <div class="relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?auto=format&fit=crop&w=500&q=80" alt="Sau 12 tuần tập luyện" class="w-full h-full object-cover" />
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-neon text-[10px] font-black uppercase text-obsidian">After 12 Tuần • 71kg</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-forest/70 text-neon text-xs font-bold">-11 kg mỡ thừa</span>
+                <span class="px-2.5 py-1 rounded-md bg-white/5 text-gray-200 text-xs font-semibold">+2.4 kg cơ nạc</span>
+              </div>
+              <h3 class="text-lg font-heading font-bold text-white">Anh Minh Tuấn (29 tuổi — Kinh doanh tại La Gi)</h3>
+              <p class="text-sm text-gray-300 mt-3 leading-relaxed italic">
+                “Tính chất công việc hay tiếp khách khiến bụng mình tích mỡ rất nhiều và hay đau lưng dưới. Theo gói 3 tháng với Bảo, mình không phải nhịn ăn khắc nghiệt mà vẫn giảm được 11kg, người nhẹ nhõm và hết hẳn đau lưng.”
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+            <span>Mục tiêu: Giảm mỡ bụng & Khỏe lưng</span>
+            <span class="text-neon font-semibold">★★★★★</span>
+          </div>
+        </article>
+
+        <!-- Story 2 -->
+        <article class="card-premium rounded-2xl overflow-hidden flex flex-col justify-between reveal">
+          <div>
+            <div class="relative h-56 grid grid-cols-2 bg-charcoal border-b border-white/10">
+              <div class="relative overflow-hidden border-r border-white/15">
+                <img src="https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=500&q=80" alt="Trước tập luyện nữ" class="w-full h-full object-cover grayscale opacity-65" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-obsidian/85 text-[10px] font-bold uppercase text-gray-300">Before • 31% Mỡ</span>
+              </div>
+              <div class="relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1548690312-e3b507d8c110?auto=format&fit=crop&w=500&q=80" alt="Sau 12 tuần tập luyện nữ" class="w-full h-full object-cover" />
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-neon text-[10px] font-black uppercase text-obsidian">After 12 Tuần • 22% Mỡ</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-forest/70 text-neon text-xs font-bold">-9% Tỷ lệ mỡ</span>
+                <span class="px-2.5 py-1 rounded-md bg-white/5 text-gray-200 text-xs font-semibold">-8 cm vòng eo</span>
+              </div>
+              <h3 class="text-lg font-heading font-bold text-white">Chị Thanh Trúc (26 tuổi — Nhân viên văn phòng)</h3>
+              <p class="text-sm text-gray-300 mt-3 leading-relaxed italic">
+                “Trước đây mình rất ngại vào khu tạ vì sợ thô và sợ sai động tác. HLV Hoài Bảo hướng dẫn cực kỳ kiên nhẫn, chỉnh từng góc đặt chân khi Squat. Sau 3 tháng vòng 2 gọn hẳn, mặc đầm tự tin hơn rất nhiều.”
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+            <span>Mục tiêu: Giảm mỡ & Săn chắc vóc dáng</span>
+            <span class="text-neon font-semibold">★★★★★</span>
+          </div>
+        </article>
+
+        <!-- Story 3 -->
+        <article class="card-premium rounded-2xl overflow-hidden flex flex-col justify-between reveal">
+          <div>
+            <div class="relative h-56 grid grid-cols-2 bg-charcoal border-b border-white/10">
+              <div class="relative overflow-hidden border-r border-white/15">
+                <img src="https://images.unsplash.com/photo-1526506118085-60ce8714f8c5?auto=format&fit=crop&w=500&q=80" alt="Trước tăng cân" class="w-full h-full object-cover grayscale opacity-65" />
+                <span class="absolute top-2.5 left-2.5 px-2 py-0.5 rounded bg-obsidian/85 text-[10px] font-bold uppercase text-gray-300">Before • 52kg</span>
+              </div>
+              <div class="relative overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1581009146145-b5ef050c2e1e?auto=format&fit=crop&w=500&q=80" alt="Sau tăng cơ" class="w-full h-full object-cover" />
+                <span class="absolute top-2.5 right-2.5 px-2 py-0.5 rounded bg-neon text-[10px] font-black uppercase text-obsidian">After 12 Tuần • 60kg</span>
+              </div>
+            </div>
+
+            <div class="p-6">
+              <div class="flex flex-wrap gap-2 mb-4">
+                <span class="px-2.5 py-1 rounded-md bg-forest/70 text-neon text-xs font-bold">+8 kg cân nặng</span>
+                <span class="px-2.5 py-1 rounded-md bg-white/5 text-gray-200 text-xs font-semibold">+5.2 kg cơ bắp</span>
+              </div>
+              <h3 class="text-lg font-heading font-bold text-white">Bạn Quốc Huy (22 tuổi — Sinh viên / Kỹ thuật)</h3>
+              <p class="text-sm text-gray-300 mt-3 leading-relaxed italic">
+                “Cơ địa mình gầy lâu năm, ăn mãi không lên ký. Bảo giúp mình tính lại lượng calo nạp vào và tập trung các bài Compound chuẩn form. Sau 3 tháng tăng 8kg nạc, vai rộng và khỏe hơn hẳn.”
+              </p>
+            </div>
+          </div>
+
+          <div class="px-6 py-4 bg-white/[0.02] border-t border-white/5 flex items-center justify-between text-xs text-gray-400">
+            <span>Mục tiêu: Tăng cân & Phát triển cơ bắp</span>
+            <span class="text-neon font-semibold">★★★★★</span>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 7. CTA & REGISTRATION FORM ==================== -->
+  <section id="lien-he" class="py-20 lg:py-28 bg-gradient-to-b from-charcoal to-obsidian border-t border-white/5 relative overflow-hidden">
+    <div class="absolute bottom-0 right-0 w-[450px] h-[450px] bg-forest/35 rounded-full blur-[150px] pointer-events-none"></div>
+
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div class="grid lg:grid-cols-12 gap-12 items-center">
+        <!-- Left Pitch -->
+        <div class="lg:col-span-6 space-y-6 reveal">
+          <span class="text-xs font-heading font-bold uppercase tracking-[0.22em] text-neon">Bắt đầu ngay hôm nay</span>
+          <h2 class="text-3xl sm:text-4xl lg:text-5xl font-heading font-black text-white leading-tight">
+            ĐĂNG KÝ TƯ VẤN & <br />
+            <span class="text-neon">ĐO CHỈ SỐ THỂ TRẠNG 1:1</span>
+          </h2>
+          <p class="text-gray-300 text-sm sm:text-base leading-relaxed">
+            Để lại thông tin bên cạnh hoặc nhắn trực tiếp qua Zalo cho <strong class="text-white">Hoài Bảo</strong>. Bạn sẽ được tư vấn chi tiết lộ trình phù hợp với thể trạng và sắp xếp buổi hẹn đánh giá trực tiếp tại <strong class="text-white">La Gi, Lâm Đồng</strong>.
+          </p>
+
+          <!-- Direct Contact Cards -->
+          <div class="grid sm:grid-cols-2 gap-4 pt-2">
+            <a href="tel:0327694803" class="p-4 rounded-xl bg-obsidian border border-white/10 hover:border-neon/50 transition-all flex items-center gap-4 group">
+              <div class="w-11 h-11 rounded-lg bg-forest text-neon flex items-center justify-center group-hover:bg-neon group-hover:text-obsidian transition-colors shrink-0">
+                <svg class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M2.25 6.75c0 8.284 6.716 15 15 15h2.25a2.25 2.25 0 0 0 2.25-2.25v-1.372c0-.516-.351-.966-.852-1.091l-4.423-1.106c-.44-.11-.902.055-1.173.417l-.97 1.293c-.282.376-.769.542-1.21.38a12.035 12.035 0 0 1-7.143-7.143c-.162-.441.004-.928.38-1.21l1.293-.97c.363-.271.527-.734.417-1.173L6.963 3.102a1.125 1.125 0 0 0-1.091-.852H4.5A2.25 2.25 0 0 0 2.25 4.5v2.25Z"/></svg>
+              </div>
+              <div>
+                <p class="text-xs text-gray-400">Hotline / Gọi trực tiếp</p>
+                <p class="text-base font-heading font-extrabold text-white group-hover:text-neon">0327 694 803</p>
+              </div>
+            </a>
+
+            <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="p-4 rounded-xl bg-obsidian border border-neon/35 hover:border-neon transition-all flex items-center gap-4 group">
+              <div class="w-11 h-11 rounded-lg bg-neon text-obsidian font-heading font-black text-xs flex items-center justify-center shrink-0">
+                ZALO
+              </div>
+              <div>
+                <p class="text-xs text-gray-400">Zalo cá nhân HLV</p>
+                <p class="text-base font-heading font-extrabold text-neon">Hoài Bảo</p>
+              </div>
+            </a>
+          </div>
+        </div>
+
+        <!-- Right Form Card -->
+        <div class="lg:col-span-6 reveal">
+          <div class="p-7 sm:p-9 rounded-3xl bg-obsidian border border-neon/25 shadow-card">
+            <h3 class="text-xl sm:text-2xl font-heading font-extrabold text-white mb-1">Nhận Lộ Trình Tập Luyện Riêng</h3>
+            <p class="text-xs sm:text-sm text-gray-400 mb-6">Điền thông tin dưới đây — Hệ thống sẽ tự động kết nối & gửi nội dung tới Zalo HLV Hoài Bảo.</p>
+
+            <form id="consultation-form" class="space-y-4">
+              <div>
+                <label for="fullName" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">Họ và tên của bạn *</label>
+                <input
+                  type="text"
+                  id="fullName"
+                  name="fullName"
+                  required
+                  placeholder="Ví dụ: Nguyễn Văn An"
+                  class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-colors"
+                />
+              </div>
+
+              <div>
+                <label for="phone" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">Số điện thoại / Zalo *</label>
+                <input
+                  type="tel"
+                  id="phone"
+                  name="phone"
+                  required
+                  pattern="[0-9]{9,11}"
+                  placeholder="Ví dụ: 0912345678"
+                  class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-colors"
+                />
+              </div>
+
+              <div class="grid sm:grid-cols-2 gap-4">
+                <div>
+                  <label for="goal" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">Mục tiêu chính</label>
+                  <select
+                    id="goal"
+                    name="goal"
+                    class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/10 text-white text-sm focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-colors"
+                  >
+                    <option value="Giảm mỡ & Săn chắc vóc dáng">Giảm mỡ & Săn chắc</option>
+                    <option value="Tăng cân & Phát triển cơ bắp">Tăng cơ & Tăng cân</option>
+                    <option value="Cải thiện sức khỏe & Hết đau mỏi">Cải thiện sức khỏe</option>
+                    <option value="Gói Huấn Luyện 3 Tháng - Thay Đổi Vóc Dáng">Gói 3 Tháng Toàn Diện</option>
+                  </select>
+                </div>
+
+                <div>
+                  <label for="timeSlot" class="block text-xs font-semibold uppercase tracking-wider text-gray-300 mb-1.5">Khung giờ rảnh dự kiến</label>
+                  <input
+                    type="text"
+                    id="timeSlot"
+                    name="timeSlot"
+                    placeholder="Ví dụ: Sáng 06:00 hoặc Tối 18:00"
+                    class="w-full px-4 py-3.5 rounded-xl bg-charcoal border border-white/10 text-white placeholder-gray-500 text-sm focus:outline-none focus:border-neon focus:ring-1 focus:ring-neon transition-colors"
+                  />
+                </div>
+              </div>
+
+              <div class="pt-2 flex flex-col sm:flex-row gap-3">
+                <button
+                  type="submit"
+                  class="flex-1 py-4 px-6 rounded-xl bg-neon text-obsidian font-heading font-black text-xs sm:text-sm uppercase tracking-wider hover:bg-emeraldAccent hover:text-white transition-all shadow-neon flex items-center justify-center gap-2"
+                >
+                  <span>Gửi & Mở Zalo Hoài Bảo</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M6 12 3.269 3.125A59.769 59.769 0 0 1 21.485 12 59.768 59.768 0 0 1 3.27 20.875L5.999 12Zm0 0h7.5"/></svg>
+                </button>
+
+                <a
+                  id="sms-fallback-btn"
+                  href="sms:0327694803"
+                  class="py-4 px-5 rounded-xl bg-charcoal border border-white/15 hover:border-neon/50 text-gray-200 hover:text-neon font-heading font-bold text-xs uppercase tracking-wider text-center transition-all"
+                >
+                  Gửi SMS
+                </a>
+              </div>
+            </form>
+
+            <!-- Feedback Banner after submit -->
+            <div id="form-feedback" class="hidden mt-5 p-4 rounded-xl bg-forest/70 border border-neon/40 text-xs sm:text-sm text-gray-100 space-y-2">
+              <p class="font-bold text-neon">✓ Đã lưu thông tin & sao chép nội dung đăng ký!</p>
+              <p id="feedback-summary" class="text-gray-200"></p>
+              <p class="text-gray-300">Nếu trình duyệt chưa tự mở ứng dụng Zalo, hãy nhấn trực tiếp vào nút bên dưới:</p>
+              <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="inline-block mt-1 px-4 py-2 rounded-lg bg-neon text-obsidian font-heading font-bold text-xs uppercase">
+                Mở Zalo Hoài Bảo (0327694803) →
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ==================== 8. FOOTER ==================== -->
+  <footer class="bg-obsidian border-t border-white/10 pt-14 pb-10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid md:grid-cols-12 gap-10 pb-10 border-b border-white/10">
+        <!-- Brand -->
+        <div class="md:col-span-5 space-y-4">
+          <div class="flex items-center gap-3">
+            <div class="w-10 h-10 rounded-lg bg-gradient-to-br from-neon to-emeraldDark flex items-center justify-center text-obsidian font-heading font-black text-xl">
+              HB
+            </div>
+            <div>
+              <span class="font-heading font-black text-lg text-white block leading-none">HOÀI BẢO <span class="text-neon">PT</span></span>
+              <span class="text-[11px] uppercase tracking-[0.2em] text-gray-400">Personal Trainer & Fitness Coach</span>
+            </div>
+          </div>
+          <p class="text-sm text-gray-400 leading-relaxed max-w-md">
+            Huấn luyện viên cá nhân 1:1 trực tiếp tại La Gi, Lâm Đồng. Thiết kế lộ trình tập luyện và dinh dưỡng khoa học giúp bạn chinh phục vóc dáng mơ ước.
+          </p>
+        </div>
+
+        <!-- Quick Links -->
+        <div class="md:col-span-3 space-y-3">
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-white">Liên kết nhanh</h4>
+          <ul class="space-y-2 text-sm text-gray-400">
+            <li><a href="#ve-toi" class="hover:text-neon transition-colors">Câu chuyện & Triết lý</a></li>
+            <li><a href="#bang-gia" class="hover:text-neon transition-colors">Gói Huấn Luyện 3 Tháng</a></li>
+            <li><a href="#lich-trong" class="hover:text-neon transition-colors">Kiểm tra lịch trống</a></li>
+            <li><a href="#ket-qua" class="hover:text-neon transition-colors">Kết quả học viên</a></li>
+          </ul>
+        </div>
+
+        <!-- Contact Info -->
+        <div class="md:col-span-4 space-y-3">
+          <h4 class="font-heading font-bold text-sm uppercase tracking-wider text-white">Thông tin liên hệ</h4>
+          <ul class="space-y-2.5 text-sm text-gray-300">
+            <li class="flex items-start gap-2.5">
+              <span class="text-neon font-bold">Địa điểm:</span>
+              <span>La Gi, Lâm Đồng (Huấn luyện trực tiếp 1:1)</span>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-neon font-bold">Hotline:</span>
+              <a href="tel:0327694803" class="hover:text-neon font-semibold">0327 694 803</a>
+            </li>
+            <li class="flex items-center gap-2.5">
+              <span class="text-neon font-bold">Zalo:</span>
+              <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="hover:text-neon font-semibold">Hoài Bảo (0327694803)</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+        <p>© 2026 HOÀI BẢO PT. Thiết kế lộ trình tập luyện cá nhân hóa tại La Gi, Lâm Đồng.</p>
+        <div class="flex items-center gap-5">
+          <a href="https://zalo.me/0327694803" target="_blank" rel="noopener" class="text-gray-400 hover:text-neon transition-colors font-semibold">Zalo Official</a>
+          <a href="tel:0327694803" class="text-gray-400 hover:text-neon transition-colors font-semibold">Gọi 0327694803</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Quick Zalo Button -->
+  <a
+    href="https://zalo.me/0327694803"
+    target="_blank"
+    rel="noopener"
+    aria-label="Chat Zalo ngay với HLV Hoài Bảo"
+    class="fixed bottom-6 right-6 z-40 pulse-ring flex items-center gap-2.5 px-4 py-3 rounded-full bg-neon text-obsidian font-heading font-black text-xs uppercase tracking-wider shadow-neon-strong hover:scale-105 transition-transform"
+  >
+    <span class="px-1.5 py-0.5 rounded bg-obsidian text-neon text-[10px]">ZALO</span>
+    <span class="hidden sm:inline">Chat HLV Hoài Bảo</span>
+  </a>
+
+  <!-- ==================== VANILLA JAVASCRIPT ==================== -->
+  <script>
+    // 1. Mobile Navigation Toggle
+    const mobileBtn = document.getElementById('mobile-menu-btn');
+    const mobileMenu = document.getElementById('mobile-menu');
+    const iconOpen = document.getElementById('icon-open');
+    const iconClose = document.getElementById('icon-close');
+    const mobileLinks = document.querySelectorAll('.mobile-link');
+
+    function toggleMobileMenu() {
+      const isHidden = mobileMenu.classList.contains('hidden');
+      mobileMenu.classList.toggle('hidden');
+      iconOpen.classList.toggle('hidden', !isHidden);
+      iconClose.classList.toggle('hidden', isHidden);
+    }
+
+    mobileBtn.addEventListener('click', toggleMobileMenu);
+    mobileLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        if (!mobileMenu.classList.contains('hidden')) toggleMobileMenu();
+      });
+    });
+
+    // 2. Schedule & Slot Data + Filter Logic
+    const days = ['Thứ 2', 'Thứ 3', 'Thứ 4', 'Thứ 5', 'Thứ 6', 'Thứ 7', 'Chủ Nhật'];
+    // true = Còn trống, false = Đã kín slot
+    const scheduleData = [
+      {
+        time: '05:30 - 06:30',
+        shift: 'morning',
+        shiftLabel: 'Sáng sớm',
+        slots: [true, false, false, false, false, false, false]
+      },
+      {
+        time: '07:00 - 08:00',
+        shift: 'morning',
+        shiftLabel: 'Buổi sáng',
+        slots: [true, false, true, false, true, true, false]
+      },
+      {
+        time: '09:00 - 10:00',
+        shift: 'morning',
+        shiftLabel: 'Buổi sáng',
+        slots: [true, true, true, true, true, false, false]
+      },
+      {
+        time: '14:30 - 15:30',
+        shift: 'afternoon',
+        shiftLabel: 'Buổi chiều',
+        slots: [true, true, false, true, true, true, false]
+      },
+      {
+        time: '16:00 - 17:00',
+        shift: 'afternoon',
+        shiftLabel: 'Buổi chiều',
+        slots: [false, true, false, true, false, true, false]
+      },
+      {
+        time: '17:30 - 18:30',
+        shift: 'evening',
+        shiftLabel: 'Cao điểm tối',
+        slots: [false, false, false, true, false, false, false]
+      },
+      {
+        time: '19:00 - 20:00',
+        shift: 'evening',
+        shiftLabel: 'Buổi tối',
+        slots: [true, false, true, false, true, false, false]
+      }
+    ];
+
+    const scheduleBody = document.getElementById('schedule-body');
+    const slotTabs = document.querySelectorAll('.slot-tab');
+
+    function renderSchedule(filter = 'all') {
+      const filtered = filter === 'all'
+        ? scheduleData
+        : scheduleData.filter(row => row.shift === filter);
+
+      scheduleBody.innerHTML = filtered.map(row => {
+        const cells = row.slots.map((isAvailable, idx) => {
+          const dayName = days[idx];
+          if (isAvailable) {
+            return `
+              <td class="p-2 text-center">
+                <button
+                  type="button"
+                  onclick="bookSlot('${dayName}', '${row.time}')"
+                  class="w-full py-2.5 px-2 rounded-lg bg-forest/70 hover:bg-neon text-neon hover:text-obsidian border border-neon/35 font-semibold transition-all cursor-pointer group"
+                >
+                  <span class="block text-[11px] font-bold">Còn trống</span>
+                  <span class="block text-[10px] opacity-85 group-hover:font-bold">Đăng ký ngay</span>
+                </button>
+              </td>
+            `;
+          } else {
+            return `
+              <td class="p-2 text-center">
+                <div class="w-full py-2.5 px-2 rounded-lg bg-white/[0.03] border border-white/5 text-gray-500 select-none">
+                  <span class="block text-[11px] font-medium text-red-400/75">Đã kín slot</span>
+                  <span class="block text-[10px] text-gray-600">1:1 Full</span>
+                </div>
+              </td>
+            `;
+          }
+        }).join('');
+
+        return `
+          <tr class="hover:bg-white/[0.02] transition-colors">
+            <td class="py-3 px-4 font-heading font-bold text-white whitespace-nowrap">
+              <div>${row.time}</div>
+              <span class="text-[10px] font-sans font-normal text-emeraldAccent">${row.shiftLabel}</span>
+            </td>
+            ${cells}
+          </tr>
+        `;
+      }).join('');
+    }
+
+    slotTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        slotTabs.forEach(t => {
+          t.classList.remove('bg-neon', 'text-obsidian');
+          t.classList.add('text-gray-400');
+        });
+        tab.classList.add('bg-neon', 'text-obsidian');
+        tab.classList.remove('text-gray-400');
+        renderSchedule(tab.dataset.filter);
+      });
+    });
+
+    // Initial render
+    renderSchedule('all');
+
+    // 3. Quick Select Slot or Package -> Scroll to Form
+    function bookSlot(day, time) {
+      const timeInput = document.getElementById('timeSlot');
+      timeInput.value = `${day} (${time})`;
+      document.getElementById('lien-he').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        document.getElementById('fullName').focus();
+      }, 600);
+    }
+
+    function selectPackage(packageName) {
+      const goalSelect = document.getElementById('goal');
+      let exists = false;
+      for (let i = 0; i < goalSelect.options.length; i++) {
+        if (goalSelect.options[i].value === packageName) {
+          goalSelect.selectedIndex = i;
+          exists = true;
+          break;
+        }
+      }
+      if (!exists) {
+        const opt = new Option(packageName, packageName, true, true);
+        goalSelect.add(opt);
+      }
+      document.getElementById('lien-he').scrollIntoView({ behavior: 'smooth' });
+      setTimeout(() => {
+        document.getElementById('fullName').focus();
+      }, 600);
+    }
+
+    // 4. Form Submission -> Copy Message + Redirect to Zalo Hoài Bảo (0327694803)
+    const form = document.getElementById('consultation-form');
+    const feedbackBox = document.getElementById('form-feedback');
+    const feedbackSummary = document.getElementById('feedback-summary');
+    const smsBtn = document.getElementById('sms-fallback-btn');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name = document.getElementById('fullName').value.trim();
+      const phone = document.getElementById('phone').value.trim();
+      const goal = document.getElementById('goal').value;
+      const timeSlot = document.getElementById('timeSlot').value.trim() || 'Linh hoạt trao đổi';
+
+      const message =
+        `Chào HLV Hoài Bảo, mình muốn đăng ký tư vấn tập PT 1:1 tại La Gi:\n` +
+        `- Họ tên: ${name}\n` +
+        `- SĐT: ${phone}\n` +
+        `- Mục tiêu/Gói: ${goal}\n` +
+        `- Khung giờ rảnh: ${timeSlot}`;
+
+      // Copy message to clipboard so user can paste immediately in Zalo
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(message).catch(() => {});
+      }
+
+      // Update SMS fallback link with prefilled body
+      smsBtn.href = `sms:0327694803?body=${encodeURIComponent(message)}`;
+
+      // Show confirmation UI
+      feedbackSummary.textContent = `Học viên: ${name} (${phone}) • Mục tiêu: ${goal} • Giờ: ${timeSlot}`;
+      feedbackBox.classList.remove('hidden');
+
+      // Open Zalo link
+      window.open('https://zalo.me/0327694803', '_blank', 'noopener');
+    });
+
+    // 5. Scroll Reveal Animation via IntersectionObserver
+    const revealElements = document.querySelectorAll('.reveal');
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('active');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+
+    revealElements.forEach(el => revealObserver.observe(el));
+  </script>
+</body>
+</html>q
